@@ -1,2 +1,7 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+// Generate a random number between 2.5 and 10.75, including both 2.5 and 10.75, and specifying 2 decimal places
+function generateRandomDecimalInRangeFormatted(min, max, places) {
+    let value = (Math.random() * (max - min + 1)) + min;
+    return Number.parseFloat(value).toFixed(places);
+}
+
+let value7 = generateRandomDecimalInRangeFormatted(2.5, 10.75, 2);
